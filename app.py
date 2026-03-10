@@ -48,7 +48,7 @@ if prompt := st.chat_input("Ask anything..."):
     # loading spinner
     with st.spinner("NovaAI is thinking..."):
         response = client.models.generate_content(
-            model="gemini-2.5-flash-tts",
+            model="gemini-2.5-flash-lite",
             contents=prompt
         )
 
